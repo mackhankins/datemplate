@@ -11,8 +11,12 @@
 {{--    @if(function_exists('era_localheader')) era_localheader(); @endif--}}
 </head>
 <body>
-<header class="container-fluid">
-    Hey There
+<header class="container-fluid header">
+    <div class="container">
+    <div class="logo-container">
+        <img class="img-fluid" src="{{ asset('images/mdah.png') }}" />
+    </div>
+    @include('partials.nav')
+    </div>
 </header>
-
 <main role="main" id="app" class="container">
