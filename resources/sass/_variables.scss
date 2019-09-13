@@ -19,3 +19,22 @@ $yellow: #ffed4a;
 $green: #38c172;
 $teal: #4dc0b5;
 $cyan: #6cb2eb;
+
+//Custom
+$daYellow: #fec230;
+$daDarkblue: #162533;
+$daLightblue: #e7eff7;
+$daMedblue: #3c4c5b;
+$daGreen: #5b7676;
+$daCyan: #2573ba;
+
+$theme-colors: (
+    "daYellow": $daYellow,
+    "daDarkblue": $daDarkblue,
+    "daLightblue": $daLightblue,
+    "daMedblue": $daMedblue,
+    "daGreen": $daGreen,
+    "daCyan": $daCyan,
+    "primary": $daDarkblue,
+    "secondary": $daMedblue,
+);

@@ -1,24 +1,14 @@
-$theme-colors: (
-  "da_yellow": #fec230,
-  "da_darkblue": #162533,
-  "da_lightblue": #e7eff7,
-  "da_medblue": #3c4c5b,
-  "da_green": #5b7676,
-  "da_cyan": #2573ba,
-  "primary": #162533,
-  "danger": #ff4136,
-
-);
-
 html {
     position: relative;
     min-height: 100%;
 }
+
 body {
     margin-bottom: 60px; /* Margin bottom by footer height */
 }
+
 .footer {
-    color: theme-color('da_lightblue');
+    color: theme-color('daLightblue');
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -28,14 +18,75 @@ body {
 }
 
 .header {
-    background: theme-color('da_lightblue');
-    width: 100%;
+    background: theme-color('daLightblue');
+    margin-bottom: 28px;
 
     .logo-container {
         width: 144px;
-        height: 117px;
-        background-color: theme-color('primary');
-        padding: 2rem 1rem 1rem 1rem;
-        margin-left: 2rem;
+        height: 116px;
+        background-color: theme-color('daDarkblue');
+        padding: 36px 20px 20px 20px;
+    }
+
+    .nav-link {
+        padding: 1.5rem 1rem 0.5rem 0;
     }
 }
+
+.breadcrumb {
+    color: $daLightblue;
+}
+
+.series {
+    &.jumbotron {
+        background: theme-color('daLightblue') !important;
+        border-bottom: 1px solid theme-color('daYellow');
+        margin-bottom: 0;
+        padding-bottom: 2.25rem;
+
+        h1 {
+            font-size: 28px !important;
+            color: theme-color('daCyan') !important;
+            font-family: "Source Sans Pro";
+            font-weight: lighter;
+            margin-block-start: -1em;
+
+            &:after {
+                content: "";
+                display: block;
+                width: 3%;
+                border-bottom: 4px solid theme-color('daYellow');
+                padding: 10px 0px;
+            }
+
+            padding-bottom: 10px;
+        }
+
+        hr {
+            background: $daYellow;
+            margin-bottom: 25px;
+        }
+
+        p {
+            font-family: "Source Serif Pro";
+            font-weight: lighter !important;
+            color: theme-color('daMedblue');
+        }
+
+        @include media-breakpoint-down(lg) {
+            h1 {
+                &:after {
+                    display: none;
+                }
+
+                padding-bottom: 0;
+            }
+
+            hr {
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+
+

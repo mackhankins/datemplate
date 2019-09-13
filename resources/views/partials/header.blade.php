@@ -19,4 +19,4 @@
     @include('partials.nav')
     </div>
 </header>
-<main role="main" id="app" class="container">
+<main role="main" id="app">
