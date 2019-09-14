@@ -13,8 +13,8 @@
 
 Route::get('/', function () {
     return view('welcome');
-});
+})->name('home');
 
 Route::get('series', function () {
    return view('series.index');
-});
+})->name('series');
