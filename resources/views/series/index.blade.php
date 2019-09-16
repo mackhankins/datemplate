@@ -8,10 +8,10 @@
             @include('series.partials.series_nav')
         </div>
     </div>
-        <div class="col-lg-9 series">
-                <span class="badge badge-pill badge-daGrey">35 Items</span>
+        <div class="col-lg-9 series_body">
+                <span class="badge badge-pill badge-daGrey">35 Item(s)</span>
             <h2>Series 1: Minutes. 1955-1959; n.d.</h2>
-            <p>
+            <p class="font-weight-light">
                     This series consists of a bound minute book and one folder of loose minutes of Jackson, Mississippi, branch meetings of the NAACP between 1955 and 1959. The bound book contains executive committee (board) and monthly meeting minutes from January 1955 through December 1957. Also included are records of expenses and income of the branch and rosters of branch officers and executive committee members, as well as attendance reports for meetings. The loose minutes consist of executive committee (board) and monthly meeting minutes for December 1958 and January through June of 1959. Notes from some of the meetings, probably taken by Myrlie Evers, are included.
             </p>
             <hr>
