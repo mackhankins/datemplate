@@ -35,6 +35,10 @@ a {
   .nav-link {
     padding: 2.375rem 1rem 0.5rem 0;
   }
+
+  @include media-breakpoint-down(lg) {
+      margin-bottom: 20px;
+  }
 }
 
 .bread_search {
@@ -107,7 +111,8 @@ a {
 
     hr {
       background: $daYellow;
-      margin-bottom: 25px;
+      margin-top: 15px;
+      margin-bottom: 15px;
     }
 
     p {
@@ -126,12 +131,93 @@ a {
       }
 
       hr {
-        margin-bottom: 20px;
+        margin-bottom: 10px;
       }
+
+      padding-bottom: 0.6rem;
     }
   }
 }
 
+.series {
+    h2 {
+        font-size: 20px !important;
+        color: $daCyan !important;
+        font-family: "Source Sans Pro";
+        font-weight: normal;
+        margin-bottom: 0;
+    }
+}
+
 .series_nav {
 
+    .series_nav_head {
+        background-color: $daMedblue;
+        color: $daLightblue;
+        padding: 8px;
+    }
+
+  .tree,
+  .tree ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .tree ul {
+    margin-left: 1em;
+    position: relative;
+  }
+  .tree ul ul {
+    margin-left: 0.5em;
+  }
+  .tree ul:before {
+    content: "";
+    display: block;
+    width: 0;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    border-left: 1px solid;
+  }
+  .tree li {
+    margin: 0;
+    padding: 0 1em;
+    line-height: 2em;
+    font-size: inherit;
+    position: relative;
+  }
+  .tree ul li:before {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 0;
+    border-top: 1px solid;
+    margin-top: -1px;
+    position: absolute;
+    top: 1em;
+    left: 0;
+  }
+  .tree ul li:last-child:before {
+    background: #fff;
+    height: auto;
+    top: 1em;
+    bottom: 0;
+  }
+  .indicator {
+    margin-right: 5px;
+  }
+  .tree li a {
+    text-decoration: none;
+  }
+  .tree li button,
+  .tree li button:active,
+  .tree li button:focus {
+    text-decoration: none;
+    border: none;
+    background: transparent;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    outline: 0;
+  }
 }

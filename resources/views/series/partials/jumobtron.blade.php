@@ -7,6 +7,7 @@
         </p>
         <hr />
         <a href="#" class="btn btn-sm btn-primary btn-rounded">Collection Description</a>
+        <a href="#" class="btn btn-sm btn-primary btn-rounded">General & Technical Data</a>
     </div>
 </div>
 @include('series.partials.breadcrumbs_search')

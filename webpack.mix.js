@@ -12,13 +12,14 @@ require('laravel-mix-purgecss');
  |
  */
 mix.browserSync({
-    host: '192.168.10.10',
+    host: '192.168.1.15',
     proxy: 'datemplate.test',
     open: false,
     files: [
         'app/**/*.php',
         'resources/views/**/*.php',
         'public/js/**/*.js',
+        'public/js/**/*.vue',
         'public/css/**/*.css'
     ],
     watchOptions: {

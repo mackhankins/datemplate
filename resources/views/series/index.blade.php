@@ -1,28 +1,21 @@
 @extends('layouts.master')
 
 @section('content')
-    @include('series.partials.jumobtron')
-    <div class="container mt-4">
-        <div class="row">
-            <div class="col-3">
-                    <ul class="nav flex-column">
-                            <li class="nav-item">
-                              <a class="nav-link active" href="#">Active</a>
-                            </li>
-                            <li class="nav-item">
-                              <a class="nav-link" href="#">Link</a>
-                            </li>
-                            <li class="nav-item">
-                              <a class="nav-link" href="#">Link</a>
-                            </li>
-                            <li class="nav-item">
-                              <a class="nav-link disabled" href="#">Disabled</a>
-                            </li>
-                          </ul>
-            </div>
-            <div class="col-9">
-                Hey
-            </div>
+@include('series.partials.jumobtron')
+<div class="container mt-4 mb-4 series">
+    <div class="row">
+        <div class="col-lg-3">
+            @include('series.partials.series_nav')
         </div>
     </div>
+        <div class="col-lg-9 series">
+                <span class="badge badge-pill badge-daGrey">35 Items</span>
+            <h2>Series 1: Minutes. 1955-1959; n.d.</h2>
+            <p>
+                    This series consists of a bound minute book and one folder of loose minutes of Jackson, Mississippi, branch meetings of the NAACP between 1955 and 1959. The bound book contains executive committee (board) and monthly meeting minutes from January 1955 through December 1957. Also included are records of expenses and income of the branch and rosters of branch officers and executive committee members, as well as attendance reports for meetings. The loose minutes consist of executive committee (board) and monthly meeting minutes for December 1958 and January through June of 1959. Notes from some of the meetings, probably taken by Myrlie Evers, are included.
+            </p>
+            <hr>
+        </div>
+    </div>
+</div>
 @endsection
