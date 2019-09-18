@@ -7,8 +7,8 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 {{--    {!! seo_helper()->render() !!}--}}
     <link href="{{ mix('css/app.css') }}" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@riophae/vue-treeselect@^0.3.0/dist/vue-treeselect.min.css">
 {{--    <link rel="stylesheet" href="{{ asset('openlayers/ol.css') }}" />--}}
+@stack('styles')
 {{--    @if(function_exists('era_localheader')) era_localheader(); @endif--}}
 </head>
 <body>

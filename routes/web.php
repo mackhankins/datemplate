@@ -12,9 +12,34 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    $options = [
+        'id' => '1',
+        'label' => 'Evers',
+        'children' => [
+            [
+                'id' => '2',
+                'label' => 'Series01',
+            ],
+            [
+                'id' => '3',
+                'label' => 'Series02',
+            ]
+        ]
+    ];
+
+    $options = json_encode($options);
+
+   return view('welcome')->with(compact('options'));
 })->name('home');
 
 Route::get('series', function () {
-   return view('series.index');
+
+    $options = [
+        'id' => '1',
+        'label' => 'Evers',
+    ];
+
+    $options = json_encode($options);
+
+   return view('series.index')->with(compact('options'));
 })->name('series');

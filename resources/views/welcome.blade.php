@@ -8,7 +8,7 @@
   </head>
   <body>
     <div id="app">
-      <treeselect v-model="value" :multiple="true" :options="options" />
+      <treeselect v-model="value" :options="{{ $options }}" />
     </div>
   </body>
   <script>

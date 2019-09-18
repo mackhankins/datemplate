@@ -1,3 +1,5 @@
+
+
 <div class="series_nav">
         <div class="series_nav_head">
             Series Navigation
@@ -28,4 +30,6 @@
         </li>
     </ul>
 
-    <treeselect v-model="value" :multiple="true" :options="options" />
+    {{-- <treeview :options="{{ $options }}" /> --}}
+
+
