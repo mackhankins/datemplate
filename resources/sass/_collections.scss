@@ -21,18 +21,7 @@
 
   .gallery-block {
     padding-bottom: 60px;
-    padding-top: 60px;
-  }
-
-  .gallery-block .heading {
-    margin-bottom: 50px;
-    text-align: center;
-  }
-
-  .gallery-block .heading h2 {
-    font-weight: bold;
-    font-size: 1.4rem;
-    text-transform: uppercase;
+    padding-top: 0;
   }
 
   .gallery-block.compact-gallery .item {
@@ -45,6 +34,7 @@
 
   .gallery-block.compact-gallery .item .image {
     transition: 0.8s ease;
+      background-size: cover;
   }
 
   .gallery-block.compact-gallery .item .info {

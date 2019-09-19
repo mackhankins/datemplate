@@ -11,7 +11,7 @@
 @stack('styles')
 {{--    @if(function_exists('era_localheader')) era_localheader(); @endif--}}
 </head>
-<body>
+<body class="antialiased">
 <header class="container-fluid header">
     <div class="container">
     <div class="logo-container">

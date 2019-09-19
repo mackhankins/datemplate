@@ -13,7 +13,7 @@
 
 Route::get('/', function () {
 
-   return view('collections.index')->with(compact('options'));
+   return view('collections.index');
 })->name('home');
 
 Route::get('series', function () {
