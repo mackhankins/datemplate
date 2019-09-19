@@ -12,24 +12,8 @@
 */
 
 Route::get('/', function () {
-    $options = [
-        'id' => '1',
-        'label' => 'Evers',
-        'children' => [
-            [
-                'id' => '2',
-                'label' => 'Series01',
-            ],
-            [
-                'id' => '3',
-                'label' => 'Series02',
-            ]
-        ]
-    ];
 
-    $options = json_encode($options);
-
-   return view('welcome')->with(compact('options'));
+   return view('collections.index')->with(compact('options'));
 })->name('home');
 
 Route::get('series', function () {

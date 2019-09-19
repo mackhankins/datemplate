@@ -1,12 +1,13 @@
 @extends('layouts.master')
 
 @section('content')
-<section class="gallery-block compact-gallery">
+@include('collections.partials.jumbotron')
+<section class="collections gallery-block compact-gallery">
         <div class="container-fluid">
             <div class="row no-gutters">
                 <div class="col-md-6 col-lg-3 item zoom-on-hover">
                     <a href="#">
-                        <img class="img-fluid image" src="/images/78040.jpg">
+                        <img class="img-fluid image" src="/images/image1.jpg">
                         <span class="description">
                             <span class="description-heading">1927 Flood Photograph Collection</span>
                             <span class="description-body">The Mississippi River Flood of 1927 displaced 700,000 people and killed 246. Water covered 170 counties across seven states, from Illinois to Louisiana.</span>
