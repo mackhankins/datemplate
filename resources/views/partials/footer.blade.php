@@ -5,6 +5,6 @@
 </footer>
 <script async type="text/javascript" src="{{ mix('js/app.js') }}"></script>
 {{--<script src="{{ asset('openlayers/ol.js') }}"></script>--}}
-@stack('scripts')
+{{-- @stack('scripts') --}}
 </body>
 </html>

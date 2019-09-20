@@ -5984,22 +5984,32 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
 // import the component
  // import the styles
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-  // register the component
+  props: ["optionsString"],
   components: {
     Treeselect: _riophae_vue_treeselect__WEBPACK_IMPORTED_MODULE_0___default.a
   },
   data: function data() {
     return {
-      // define the default value
-      value: null,
-      // define options
-      options: this.options
+      value: null
     };
+  },
+  computed: {
+    options: function options() {
+      return JSON.parse(this.optionsString);
+    }
   }
 });
 
@@ -42898,16 +42908,27 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("treeselect", {
-    attrs: { multiple: false, options: _vm.options },
-    model: {
-      value: _vm.value,
-      callback: function($$v) {
-        _vm.value = $$v
-      },
-      expression: "value"
-    }
-  })
+  return _c(
+    "div",
+    [
+      _c("treeselect", {
+        attrs: {
+          multiple: false,
+          defaultExpandLevel: 1,
+          options: _vm.options,
+          placeholder: "Series Naviation"
+        },
+        model: {
+          value: _vm.value,
+          callback: function($$v) {
+            _vm.value = $$v
+          },
+          expression: "value"
+        }
+      })
+    ],
+    1
+  )
 }
 var staticRenderFns = []
 render._withStripped = true
@@ -55356,8 +55377,8 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /home/vagrant/projects/datemplate/resources/js/app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! /home/vagrant/projects/datemplate/resources/sass/app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! C:\laragon\www\datemplate\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! C:\laragon\www\datemplate\resources\sass\app.scss */"./resources/sass/app.scss");
 
 
 /***/ })

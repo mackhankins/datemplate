@@ -1,12 +1,11 @@
 @extends('layouts.master')
 
 @section('content')
-    @include('series.partials.jumobtron')
-    <div class="container mt-4 mb-4 series">
-        <div class="row">
-            <div class="col-lg-3">
-                @include('series.partials.series_nav')
-            </div>
+@include('series.partials.jumobtron')
+<div class="container mt-4 mb-4 series">
+    <div class="row">
+        <div class="col-lg-3">
+            @include('series.partials.series_nav')
         </div>
         <div class="col-lg-9 series_body">
             <span class="badge badge-pill">35 Item(s)</span>
@@ -35,4 +34,5 @@
             <hr>
         </div>
     </div>
-@endsection
+</div>
+    @endsection

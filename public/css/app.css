@@ -17849,85 +17849,14 @@ a {
 }
 
 .series_nav {
-  font-size: 16px !important;
+  font-size: 14px !important;
+  margin-bottom: 25px;
 }
 
 .series_nav .series_nav_head {
   background-color: #3c4c5b;
   color: #e7eff7;
   padding: 8px;
-}
-
-.series_nav .tree,
-.series_nav .tree ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.series_nav .tree ul {
-  margin-left: 1em;
-  position: relative;
-}
-
-.series_nav .tree ul ul {
-  margin-left: 0.5em;
-}
-
-.series_nav .tree ul:before {
-  content: "";
-  display: block;
-  width: 0;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  border-left: 1px solid;
-}
-
-.series_nav .tree li {
-  margin: 0;
-  padding: 0 1em;
-  line-height: 2em;
-  position: relative;
-}
-
-.series_nav .tree ul li:before {
-  content: "";
-  display: block;
-  width: 10px;
-  height: 0;
-  border-top: 1px solid;
-  margin-top: -1px;
-  position: absolute;
-  top: 1em;
-  left: 0;
-}
-
-.series_nav .tree ul li:last-child:before {
-  background: #fff;
-  height: auto;
-  top: 1em;
-  bottom: 0;
-}
-
-.series_nav .indicator {
-  margin-right: 5px;
-}
-
-.series_nav .tree li a {
-  text-decoration: none;
-}
-
-.series_nav .tree li button,
-.series_nav .tree li button:active,
-.series_nav .tree li button:focus {
-  text-decoration: none;
-  border: none;
-  background: transparent;
-  margin: 0px 0px 0px 0px;
-  padding: 0px 0px 0px 0px;
-  outline: 0;
 }
 
 .collections.jumbotron {
